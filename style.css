@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(./images/galaxy.gif);
+  color: #fff;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+h1 {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+button {
+  height: 44px;
+  outline: none;
+  color: white;
+  background: rgb(56, 54, 54);
+  font-size: 24px;
+  width: 240px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(90, 86, 86);
+}
+
+input {
+  height: 40px;
+  outline: none;
+  font-size: 24px;
+  color: #808080;
+}
+
+select {
+  font-size: 24px;
+  color: #fff;
+  background: rgb(56, 54, 54);
+}
+
+#selectPlanet {
+  height: 44px;
+  outline: none;
+  width: 240px;
+}
+
+.flex-container {
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.item1 {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 950px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  input {
+    width: 240px;
+  }
+}
